@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AKAI Frontend Task</title>
+	<link href="css/form.css" rel="stylesheet" type="text/css">
+	<meta charset="utf-8" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" name="viewport">
+</head>
+<body>
+	<section id="task-frontend">
+		<span class="basic-title">Dołącz do nas!</span>
+
+		<h1 class="form-line">Formularz rekrutacyjny</h1>
+
+		<form method="POST">
+			<input id="first-name" placeholder="Imię" type="text"/>
+
+			<input id="last-name" placeholder="Nazwisko" type="text"/>
+
+			<input id="email" placeholder="E-mail" type="email"/>
+
+			<span>Sekcja</span>
+			<div>
+				<input id="frontend-checkbox" name="section" type="checkbox" value="frontend">
+				<label for="frontend-checkbox">Frontend</label>
+			</div>
+			<div>
+				<input id="backend-checkbox" name="section" type="checkbox" value="frontend">
+				<label for="backend-checkbox">Backend</label>
+			</div>
+			<div>
+				<input id="mobile-checkbox" name="section" type="checkbox" value="frontend">
+				<label for="mobile-checkbox">Mobile</label>
+			</div>
+			<div>
+				<input id="graphics-checkbox" name="section" type="checkbox" value="frontend">
+				<label for="graphics-checkbox">Grafika</label>
+			</div>
+
+
+			<input id="submit" type="submit" value="Wyślij">
+		</form>
+
+	</section>
+<script src="js/validation.js" type="text/javascript"></script>
+
+</body>
+</html>
