@@ -14,7 +14,7 @@ body {
   box-shadow: 0px 0px 8px -1px rgba(0, 0, 0, 1);
 
   width: 400px;
-  height: 550px;
+  height: 530px;
   margin: 0 auto;
   text-align: center;
   background-color: rgba(112, 112, 112, 0.58);
@@ -22,7 +22,9 @@ body {
 }
 #task-frontend .basic-title {
   margin-top: 20px;
-  color: red;
+  color: rgb(38, 215, 255);
+  text-transform: uppercase;
+  letter-spacing: 2px;
   font-weight: 700;
 }
 form{
@@ -34,7 +36,9 @@ form{
   text-transform: uppercase;
   margin: 10px auto 0 auto;
 }
-
+.empty-field::placeholder{
+  color: red;
+}
 #task-frontend input[type="text"], #task-frontend input[type="email"] {
   display: block;
   margin: 10px auto;
@@ -44,22 +48,33 @@ form{
   height: 30px;
   box-shadow: 0px 0px 8px -1px rgba(0, 0, 0, 1);
 }
-#task-frontend span {
+#task-frontend #sekcja {
   display: block;
-  margin-top: 50px;
+  margin-top: 20px;
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 1.2rem;
 }
-
+#checkbox-req{
+  /*margin-bottom: 20px;*/
+  font-size: 20px;
+  color: red;
+}
 #task-frontend input[type="checkbox"] {
   border: 1px solid red;
   text-transform: none;
 }
 
-#task-frontend input[type="submit"] {
+/*#task-frontend input[type="submit"] {*/
+/*  color: #002980;*/
+/*  margin-top: 30px;*/
+/*  width: 100px;*/
+/*  height: 30px;*/
+/*  text-align: center;*/
+/*}*/
+button{
   color: #002980;
-  margin-top: 50px;
+  margin-top: 30px;
   width: 100px;
   height: 30px;
   text-align: center;

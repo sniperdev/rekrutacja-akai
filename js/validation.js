@@ -11,14 +11,32 @@
 */
 
 
-let name = document.querySelector('#first-name')
+const name = document.querySelector('#first-name')
 const lastName = document.querySelector('#last-name')
 const email = document.querySelector('#email')
 
-const submit = document.querySelector('#submit')
+const button = document.querySelector('button');
 
-submit.addEventListener('click', function(){
-    if(name[0]===""){
-        name.placeholder="Wpisz swoje imie";
+const frontendCheckbox = document.querySelector('#frontend-checkbox')
+const backendCheckbox = document.querySelector('#backend-checkbox')
+const mobileCheckbox = document.querySelector('#mobile-checkbox')
+const graphicsCheckbox = document.querySelector('#graphics-checkbox')
+const checkboxReq=document.querySelector('#checkbox-req')
+
+button.addEventListener('click', function(){
+    if(name.value.length===0){
+        name.placeholder="Proszę, wpisz swoje imie";
+        name.classList.add("empty-field");
+    }
+    if(lastName.value.length===0){
+        lastName.placeholder="Proszę, wpisz swoje nazwisko";
+        lastName.classList.add("empty-field");
+    }
+    if(email.value.length===0){
+        email.placeholder="Proszę, wpisz swojego maila";
+        email.classList.add("empty-field");
+    }
+    if(!frontendCheckbox.checked && !backendCheckbox.checked && !mobileCheckbox.checked && !graphicsCheckbox.checked){
+        checkboxReq.innerHTML="Proszę zaznaczyć wybraną sekcję";
     }
 })
